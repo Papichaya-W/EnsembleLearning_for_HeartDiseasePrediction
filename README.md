@@ -2,7 +2,7 @@
 
 This project aims to build a machine learning model to predict risk of having a heart attack based on  health-related and lifestyle features using data from https://www.kaggle.com/datasets/alexteboul/heart-disease-health-indicators-dataset
 
-## 📂 Table of Contents
+## Table of Contents
 
 * [Data Loading](#data-loading)
 * [Data Cleaning](#data-cleaning)

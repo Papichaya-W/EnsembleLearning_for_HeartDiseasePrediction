@@ -7,7 +7,7 @@ This project aims to build a machine learning model to predict risk of having a 
 * [Data Loading](#data-loading)
 * [Data Cleaning](#data-cleaning)
 * [Data Preprocessing](#data-preprocessing)
-* [Model Architecture](#model-architecture)
+* [Hyperparameter Tuning](#hyperparameter-tuning)
 * [Proposed Model](#proposed-model)
 * [Evaluation](#evaluation)
 

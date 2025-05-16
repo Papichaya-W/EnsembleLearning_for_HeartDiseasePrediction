@@ -57,32 +57,21 @@ Data is loaded from a structured CSV file containing the features and target lab
 
 ## Data Cleaning
 
-* Removed or imputed missing values
-* Checked for outliers in `BMI`, `MentHlth`, and `PhysHlth`
-* Converted categorical variables into suitable format
+* Check for missing values
 
 ---
 
 ## Data Preprocessing
 
-* Applied label encoding or one-hot encoding as needed
-* Scaled numerical features using StandardScaler
-* Balanced the dataset (e.g. using undersampling or SMOTE) to handle class imbalance
-
+* Random sampling due to limited computational resources
+* Handle class imbalance
+* Feature selection
+* Scaling
+* Train-Test split
 ---
+## Hyperparameter Tuning
 
-## Model Architecture
-
-The model pipeline includes the following steps:
-
-1. **Feature Selection**: Based on domain relevance and correlation
-2. **Train-Test Split**: Stratified 80-20 or cross-validation approach
-3. **Modeling**: Compared different classifiers such as:
-
-   * Logistic Regression
-   * Decision Tree
-   * Random Forest
-   * XGBoost
+* Random search for best parameter configuration
 
 ---
 
@@ -90,16 +79,11 @@ The model pipeline includes the following steps:
 
 The final selected model was a **\[optimized Stacking with tuned XGBoost, Bagging, AdaBoost, and Decision tree as base learner (Final estimator = XGBoost)]** based on performance metrics.
 
-Model training used:
-
-* Cross-validation
-* Hyperparameter tuning
-
 ---
 
 ## Evaluation
 
-Model performance was evaluated using:
+Model performance was evaluated against baseline model using:
 
 * Accuracy
 * Precision, Recall, F1-Score
